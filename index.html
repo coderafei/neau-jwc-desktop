@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>东农校内</title>
+  </head>
+  <link href="http://lib.baomitu.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+  <style>
+    #webview {
+      width: 100vw;
+      height: 100vh;
+    }
+  </style>
+  <body>
+    <webview id="webview" src="http://202.118.167.85/" preload="./jwc.js"></webview>
+
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
